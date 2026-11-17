@@ -1,78 +1,33 @@
-# React + TypeScript + Vite
+# 💻 Vanzoff Dev. — Portfólio & Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page profissional e portfólio pessoal desenvolvido para apresentar serviços de desenvolvimento web, projetos realizados e trajetória técnica na área de tecnologia.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ✨ Funcionalidades
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- **Hero Section Interativa:** Animações de entrada fluidas e efeito de digitação dinâmica (*typewriter*).
+- **Cards de Projetos 3D:** Exibição interativa com efeito *flip* (frente e verso) detalhando stacks de Front-End, Back-End e links diretos.
+- **Navegação Responsiva:** Cabeçalho fixo com menu lateral adaptável para dispositivos móveis.
+- **Contato Direto:** Integração rápida via WhatsApp para solicitação de orçamentos e serviços.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **[React](https://react.dev/)** — Biblioteca para construção da interface
+- **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática e maior segurança no código
+- **[Vite](https://vitejs.dev/)** — Build tool e servidor de desenvolvimento ultrarrápido
+- **[Tailwind CSS](https://tailwindcss.com/)** — Estilização utilitária e design responsivo
+- **[Framer Motion](https://www.framer.com/motion/)** — Animações e transições de interface
+- **[Lucide React](https://lucide.dev/)** — Ícones vetoriais minimalistas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Como executar localmente
 
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/VanzoffDEV/LandingPage_VanzoffDev.git](https://github.com/VanzoffDEV/LandingPage_VanzoffDev.git)
